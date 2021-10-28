@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"/>
+    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mobile.css">
+  </head>
+  <body>
+    <header>
+      <h1>THIS INTERIOR</h1>
+      <div class="dots-container">
+        <img id="dots" class="dots"src="./menu(1).svg" alt="">
+      </div>
+      <nav>
+        <aside id="aside" class="aside-none ">
+        <div class="close">x</div>
+        <div class="aside-container">
+           <a href="">Home</a>
+           <a href="">Collection</a>
+           <a href="">About</a>
+           <a href="">Contact</a>
+        </div>
+        </aside>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="text-container">
+        <h1>Modern Interior</h1>
+        <p>A full-service residential & commercial interior design and staging
+          company offering professional organizing & ecoservices</p>
+          <span>Read more  --></span>
+      </section>
+      <section class="img-container">
+        <div>
+        <img src="./photo1.png" alt="">
+      </div>
+      <div class="profile-container">
+        <img class="alissa" src="./photo2.png" alt="">
+        <h3>Aliza Webber</h3>
+      <p>Interior designer</p>
+      <h2>Designed in 2020 by Aliza Webber</h2>
+      </div>
+      </section>
+      
+    </main>
+    <footer>
+      <p>created by Rodrigo Roque - devchallenger.io</p>
+    </footer>
+    <script>
+      const aside = document.getElementById("aside")
+      const dots = document.getElementById("dots")
+      const main = document.getElementsByClassName("main")
+
+      dots.addEventlistener("click", abrirMenu())
+
+      function abrirMenu(){
+           if (aside.classlist.contains("aside-none"){
+             aside.classlist.replace("aside-none","aside")
+            }           }
+        
+       
+        
+        
+
+      }
+     
+
+      
+    
+      
+
+    </script>
+  </body>
+</html>

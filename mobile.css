@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #181719;
+}
+header {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+header h1{
+    width: 110px;
+    height: 30px;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    padding: 5px;
+    font-weight: 200;
+    text-align: center;
+    font-family:  Crimson Pro;
+
+}
+header .dots-container{
+    display: grid;
+    grid-column: 3;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+
+}
+
+header .dots-container img{
+    width: 100px;
+    height: 40px;
+}
+main{
+
+}
+.text-container {
+    margin-left: 10px;
+}
+main .text-container h1{
+    color: white;
+    font-family: lora, sans serif ;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.text-container p{
+    width: 60%;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.text-container span{
+color: white;
+width: 80px;
+height: 50px;
+margin: 10px 0;
+font-size: 1.4rem;
+font-weight: 700;
+font-family: Montserrat;
+
+}
+.img-container{
+    position: relative;
+    height: 400px;
+}
+.img-container div{
+    width: 400px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    position: relative;
+}
+.img-container div img{
+    width: 380px;
+    height: 290px;
+}
+
+.img-container .profile-container{
+    display: grid;
+    grid-template-rows: 16px 12px 12px 20px 50%;
+    grid-template-columns: 10px 80px 80px;
+    width: 300px;
+    height: 140px;
+    background-color: #181719;
+    position: absolute;
+    top: 50%;
+    left:15% ;
+    padding-top: 10px;
+}
+.profile-container .alissa{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    grid-row: 1;
+    grid-column: 2;
+}
+.profile-container h3{
+    grid-row: 2;
+    grid-column: 3;
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.profile-container p{
+    grid-row: 3;
+    grid-column: 3;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #828282;
+    margin-top: 5px;
+    line-height: 12px;
+
+}
+
+.profile-container h2{
+grid-row: 5;
+grid-column: 2/4;
+color: white;
+font-size: 1.8rem;
+line-height: 23px;
+font-weight: bold;
+font-family: Lora;
+text-align: center;
+
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer p{
+ width: 100%;
+height: 30px;
+color: white;
+font-size: 1.4rem;
+font-weight: 500;
+font-family: Montserrat;
+text-align: center;
+}
+
+
+@media (min-width: 800px) {
+    body{
+        background-color: white;
+    }
+}
+
+nav .aside-none::selection{
+    color: white;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 4;
+    position: relative;
+    background-color: #181719;
+    
+}
+
+nav .aside .close{
+text-align: right;
+font-size: 3rem;
+position: relative;
+z-index: 3;
+color: white;
+top: -14%;
+left: -27%;
+
+}
+
+nav .aside .aside-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top:-15%;
+}
+nav .aside .aside-container a{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+nav .aside-none{
+  display: none;
+  
+}
