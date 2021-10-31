@@ -11,24 +11,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" media="(min-width: 800px)" href="./desktop.css">
   </head>
   <body>
+    <aside id="aside" class="aside-none aside">
+      <div id="close" class="close">x</div>
+      <ul class="aside-container">
+         <li id="li">Home</li>
+         <li id="li">Collection</li>
+         <li id="li">About</a>
+         <li id="li">Contact</a>
+      </ul>
+      </aside>
     <header>
       <h1>THIS INTERIOR</h1>
-      <div class="dots-container">
+      <figure class="dots-container">
         <img id="dots" class="dots"src="./menu(1).svg" alt="">
-      </div>
-      <nav>
-        <aside id="aside" class="aside-none ">
-        <div class="close">x</div>
-        <div class="aside-container">
-           <a href="">Home</a>
-           <a href="">Collection</a>
-           <a href="">About</a>
-           <a href="">Contact</a>
-        </div>
-        </aside>
-      </nav>
+      </figure>
     </header>
     <main class="main">
       <section class="text-container">
@@ -57,25 +56,43 @@
       const aside = document.getElementById("aside")
       const dots = document.getElementById("dots")
       const main = document.getElementsByClassName("main")
+      const close = document.getElementById("close")
+    //  let asideClass = aside.className;
 
-      dots.addEventlistener("click", abrirMenu())
+      dots.addEventListener("click" , e => {e.preventDefault()
+        if (aside.classList.contains("aside-none")) {
+            aside.classList.remove("aside-none")
+        }
+        else{
+          aside.classList.add("aside-none")
+        }
+      })
+
+      close.addEventListener("click" , e => {e.preventDefault()
+      if (aside.classList.contains("aside")){
+        aside.classList.add("aside-none")
+      }
+      else{
+        aside.classList.add("aside-none")
+      }
+      
+      })
+      //function abrirMenu(){
+       // document.getElementById("aside").className("aside")
+      //}
+      //dots.onclick = cambiarClase() {
+       // aside.classList.replace("aside")
+     // }
+      
+
+      
+      /*dots.addEventlistener("click", abrirMenu())
 
       function abrirMenu(){
            if (aside.classlist.contains("aside-none"){
              aside.classlist.replace("aside-none","aside")
             }           }
-        
-       
-        
-        
-
-      }
-     
-
-      
-    
-      
-
+        */
     </script>
   </body>
 </html>

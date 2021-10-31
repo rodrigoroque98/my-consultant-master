@@ -39,12 +39,10 @@ header .dots-container{
 }
 
 header .dots-container img{
-    width: 100px;
+    width: 40px;
     height: 40px;
 }
-main{
 
-}
 .text-container {
     margin-left: 10px;
 }
@@ -162,13 +160,9 @@ text-align: center;
 }
 
 
-@media (min-width: 800px) {
-    body{
-        background-color: white;
-    }
-}
 
-nav .aside-none::selection{
+
+.aside{
     color: white;
     width: 100vh;
     height: 100vh;
@@ -176,23 +170,23 @@ nav .aside-none::selection{
     justify-content: center;
     flex-direction: column;
     z-index: 4;
-    position: relative;
+    position: absolute;
     background-color: #181719;
     
 }
 
-nav .aside .close{
+.aside .close{
 text-align: right;
 font-size: 3rem;
-position: relative;
+position: absolute;
 z-index: 3;
 color: white;
-top: -14%;
-left: -27%;
+top: 0%;
+left: 56%;
 
 }
 
-nav .aside .aside-container{
+.aside .aside-container{
     color: white;
     display: flex;
     flex-direction: column;
@@ -202,14 +196,18 @@ nav .aside .aside-container{
     position: relative;
     top:-15%;
 }
-nav .aside .aside-container a{
+.aside .aside-container li{
     color: white;
     text-align: center;
     font-size: 2rem;
 }
+.aside .aside-container li:hover{
+    border-bottom: 2px solid white;
+}
 
 
-nav .aside-none{
+.aside-none{
+ right: -100%;
+  position: relative;
   display: none;
-  
 }
